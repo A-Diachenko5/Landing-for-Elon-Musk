@@ -150,11 +150,6 @@ body {
     grid-template-rows: 50% 50%;
 }
 
-.main__benefits > * :hover {
-    border: 1px solid #972D14;
-    
-}
-
 .benefits__item {
     margin: 0.4rem;
     padding: 30px;
@@ -177,9 +172,6 @@ body {
 .benefits__item_1 {
     background: linear-gradient(320deg, #9898982a, #ffffff00, #ffffff00);
 
-}
-
-.benefits__item :hover {
 }
 
 .benefits__item_2 {

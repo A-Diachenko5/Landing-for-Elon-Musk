@@ -85,6 +85,7 @@ body {
   margin-top: 11rem;
 }
 .content__title {
+  margin-left: 7px;
   font-family: "Museo Sans 700";
   background: linear-gradient(90deg, #ffffff, #c5300f);
   -webkit-background-clip: text;
@@ -236,7 +237,7 @@ body {
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1800px) {
   .content__title {
     clip-path: none;
   }

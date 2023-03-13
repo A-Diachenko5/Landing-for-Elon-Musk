@@ -62,7 +62,7 @@ body {
 .header__item :hover {
   text-decoration: none;
   border-bottom: 1px solid #8d8d8dcd;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
   color: #979797;
 }
 
@@ -105,12 +105,12 @@ body {
   position: relative;
   margin-top: 9rem;
   width: 14rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0.8rem 1rem;
   font-family: "Museo Sans 100";
   letter-spacing: 0.2px;
   background: none;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-image: linear-gradient(10deg, #0079ba5a, #0b94dd00, #0079ba5a);
   border-image-slice: 1;
   cursor: pointer;
@@ -145,12 +145,13 @@ body {
 .main__benefits {
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  gap: 10px;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 49% 49%;
+  box-sizing: border-box;
 }
 
 .benefits__item {
-  margin: 0.4rem;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -197,6 +198,7 @@ body {
   color: white;
   font-family: "Museo Sans 300";
   letter-spacing: 0.1rem;
+  font-size: 3rem;
 }
 
 .burger {
@@ -263,18 +265,23 @@ body {
     justify-content: center;
     margin-top: -14rem;
     grid-template-columns: 170px 170px 170px 170px;
-    grid-template-rows: 100%;
+    grid-template-rows: 170px;
   }
   .benefits__text {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .benefits__title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .benefits__item {
-    background: linear-gradient(320deg, #9898982a, #ffffff00, #ffffff00);
-    padding: 30px;
-    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(
+      320deg,
+      #9898981c,
+      #ffffff00,
+      #ffffff00,
+      #ffffff00
+    );
   }
   .benefits__item :first-child {
     margin-bottom: 6px;
@@ -297,11 +304,11 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
   .main__benefits {
     margin-top: -3rem;
     grid-template-columns: 170px 170px;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 150px 150px;
   }
 }
 
@@ -335,10 +342,18 @@ body {
     padding: 20px 10px;
   }
   .benefits__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  .main__benefits {
+    grid-template-columns: 20vh 20vh;
+    grid-template-rows: 50vw 50vw;
   }
 }
 
 .hidden {
   display: none;
+}
+
+.burger__link {
+  font-size: 2rem;
 }
